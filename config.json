@@ -1,0 +1,40 @@
+{
+  "tripadvisor": {
+    "plat_selector": ".menu-item-name",
+    "preu_selector": ".menu-item-price",
+    "dynamic": false,
+    "pdf": false,
+    "plat_regex": "^[A-Za-zÀ-ÖØ-öø-ÿ0-9 ,.'-]+$",
+    "preu_regex": "^[0-9]+(\\.[0-9]{1,2})?€$"
+  },
+  "restaurant_exemple": {
+    "plat_selector": "table.menu tr td.nom",
+    "preu_selector": "table.menu tr td.preu",
+    "dynamic": false,
+    "pdf": false
+  },
+  "pdf": {
+    "dynamic": false,
+    "pdf": true,
+    "plat_regex": "(.+?)\\s+(\\d+(?:[.,]\\d+)?)(?:€|EUR)",
+    "preu_regex": "^[0-9]+(\\.[0-9]{1,2})?€$"
+  },
+  "vii": {
+    "type": "vii",
+    "dynamic": false,
+    "pdf": false,
+    "container_selector": "div.carta-cont",
+    "item_selector": "p",
+    "plat_preu_regex": "(.+?)\\s+(\\d+(?:[.,]\\d+)?)€",
+    "span_detall_class": "menu-detail"
+  },
+  "incorrecte": {
+    "type": "incorrecte",
+    "dynamic": false,
+    "pdf": false,
+    "container_selector": "div.elementor",
+    "item_selector": "h2.elementor-heading-title",
+    "plat_preu_regex": "(.+?)\\s+(\\d+(?:[.,]\\d+)?)€",
+    "span_detall_class": "menu-detail"
+  }
+}
